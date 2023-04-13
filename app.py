@@ -4,4 +4,7 @@ def calculate_percentage(number, percentage):
                     :param percentage: Double or int numeric value between 0-100
                     :return: Calculated percentage
             """
-    return number * percentage / 100
+    try:
+        return number * percentage / 100
+    except Exception as e:
+        print(e)
